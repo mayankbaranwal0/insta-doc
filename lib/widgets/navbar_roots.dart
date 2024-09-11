@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../screens/home_screen.dart';
 import '../screens/messages_screen.dart';
+import '../screens/settings_screen.dart';
 
 class NavbarRoots extends StatefulWidget {
   const NavbarRoots({super.key});
@@ -16,6 +17,7 @@ class _NavbarRootsState extends State<NavbarRoots> {
   final _screens = [
     HomeScreen(),
     MessagesScreen(),
+    SettingScreen(),
   ];
 
   @override
@@ -48,6 +50,10 @@ class _NavbarRootsState extends State<NavbarRoots> {
             BottomNavigationBarItem(
               icon: Icon(CupertinoIcons.chat_bubble_text_fill),
               label: "Messages",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.settings_solid),
+              label: "Settings",
             ),
           ],
         ),
