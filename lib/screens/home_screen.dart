@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatelessWidget {
+import 'appointment_screen.dart';
 
+class HomeScreen extends StatelessWidget {
   final List symptoms = [
     "Fatigue",
     "Snuffle",
@@ -92,7 +93,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         const SizedBox(height: 5),
                         const Text(
-                          "Schedule a consultation",
+                          "Schedule an appointment",
                           style: TextStyle(
                             color: Colors.white54,
                           ),
@@ -222,6 +223,13 @@ class HomeScreen extends StatelessWidget {
               physics: const NeverScrollableScrollPhysics(),
               itemBuilder: (context, index) {
                 return InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => AppointmentScreen(),
+                        ));
+                  },
                   child: Container(
                     margin: const EdgeInsets.all(10),
                     padding: const EdgeInsets.symmetric(vertical: 15),
