@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 
 import 'login_screen.dart';
 
-class SignUpScreen extends StatefulWidget {
-  const SignUpScreen({super.key});
+class SignupScreen extends StatefulWidget {
+  const SignupScreen({super.key});
 
   @override
-  State<SignUpScreen> createState() => _SignUpScreenState();
+  State<SignupScreen> createState() => _SignupScreenState();
 }
 
-class _SignUpScreenState extends State<SignUpScreen> {
+class _SignupScreenState extends State<SignupScreen> {
   bool passToggle = true;
 
   @override

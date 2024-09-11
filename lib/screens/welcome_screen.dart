@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/navbar_roots.dart';
 import 'login_screen.dart';
 import 'signup_screen.dart';
 
@@ -18,13 +19,22 @@ class WelcomeScreen extends StatelessWidget {
             const SizedBox(
               height: 15,
             ),
-            const Align(
+            Align(
               alignment: Alignment.centerRight,
-              child: Text(
-                "Skip",
-                style: TextStyle(
-                  color: Color(0xFF7165D6),
-                  fontSize: 20,
+              child: TextButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const NavbarRoots(),
+                      ));
+                },
+                child: const Text(
+                  "Skip",
+                  style: TextStyle(
+                    color: Color(0xFF7165D6),
+                    fontSize: 20,
+                  ),
                 ),
               ),
             ),
@@ -92,7 +102,7 @@ class WelcomeScreen extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const SignUpScreen(),
+                            builder: (context) => const SignupScreen(),
                           ));
                     },
                     child: Container(

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../widgets/navbar_roots.dart';
 import 'signup_screen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -24,9 +25,7 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(height: 10),
               Padding(
                 padding: const EdgeInsets.all(20),
-                child: Image.asset(
-                  "assets/images/first_image.png",
-                ),
+                child: Image.asset("assets/images/first_image.png"),
               ),
               const SizedBox(height: 10),
               const Padding(
@@ -67,6 +66,13 @@ class _LoginScreenState extends State<LoginScreen> {
               Padding(
                 padding: const EdgeInsets.all(15),
                 child: InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const NavbarRoots(),
+                        ));
+                  },
                   child: Container(
                     padding: const EdgeInsets.symmetric(vertical: 15),
                     width: double.infinity,
@@ -99,7 +105,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text(
-                    "Don't have any account?",
+                    "Don't have an account?",
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w500,
@@ -111,7 +117,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const SignUpScreen(),
+                            builder: (context) => const SignupScreen(),
                           ));
                     },
                     child: const Text(
