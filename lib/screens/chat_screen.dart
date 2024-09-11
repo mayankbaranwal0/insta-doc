@@ -18,7 +18,7 @@ class ChatScreen extends StatelessWidget {
               CircleAvatar(
                 radius: 25,
                 backgroundImage: AssetImage(
-                  "images/doctor1.jpg",
+                  "assets/images/doctor1.jpg",
                 ),
               ),
               Padding(
@@ -60,7 +60,8 @@ class ChatScreen extends StatelessWidget {
         ),
       ),
       body: ListView(
-        padding: const EdgeInsets.only(top: 20, left: 15, right: 15, bottom: 80),
+        padding:
+            const EdgeInsets.only(top: 20, left: 15, right: 15, bottom: 80),
         children: const [
           ChatSample(),
           ChatSample(),

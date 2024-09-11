@@ -67,7 +67,7 @@ class SettingScreen extends StatelessWidget {
                 shape: BoxShape.circle,
               ),
               child: const Icon(
-                Icons.notifications_none_outlined,
+                CupertinoIcons.bell,
                 color: Colors.deepPurple,
                 size: 35,
               ),
@@ -91,7 +91,7 @@ class SettingScreen extends StatelessWidget {
                 shape: BoxShape.circle,
               ),
               child: const Icon(
-                Icons.privacy_tip_outlined,
+                CupertinoIcons.shield,
                 color: Colors.indigo,
                 size: 35,
               ),
@@ -115,7 +115,7 @@ class SettingScreen extends StatelessWidget {
                 shape: BoxShape.circle,
               ),
               child: const Icon(
-                Icons.settings_suggest_outlined,
+                CupertinoIcons.gear,
                 color: Colors.green,
                 size: 35,
               ),
@@ -139,7 +139,7 @@ class SettingScreen extends StatelessWidget {
                 shape: BoxShape.circle,
               ),
               child: const Icon(
-                Icons.info_outline_rounded,
+                CupertinoIcons.info,
                 color: Colors.orange,
                 size: 35,
               ),
@@ -163,7 +163,7 @@ class SettingScreen extends StatelessWidget {
                 shape: BoxShape.circle,
               ),
               child: const Icon(
-                Icons.info_outline_rounded,
+                CupertinoIcons.power,
                 color: Colors.redAccent,
                 size: 35,
               ),

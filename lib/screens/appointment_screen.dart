@@ -50,7 +50,8 @@ class AppointmentScreen extends StatelessWidget {
                       children: [
                         const CircleAvatar(
                           radius: 35,
-                          backgroundImage: AssetImage("images/doctor1.jpg"),
+                          backgroundImage:
+                              AssetImage("assets/images/doctor1.jpg"),
                         ),
                         const SizedBox(height: 15),
                         const Text(
@@ -198,8 +199,8 @@ class AppointmentScreen extends StatelessWidget {
                                 ListTile(
                                   leading: CircleAvatar(
                                     radius: 25,
-                                    backgroundImage:
-                                        AssetImage("assets/images/${images[index]}"),
+                                    backgroundImage: AssetImage(
+                                        "assets/images/${images[index]}"),
                                   ),
                                   title: const Text(
                                     "Dr. Doctor Name",
@@ -227,8 +228,7 @@ class AppointmentScreen extends StatelessWidget {
                                 ),
                                 const SizedBox(height: 5),
                                 const Padding(
-                                  padding: EdgeInsets.symmetric(
-                                      horizontal: 10),
+                                  padding: EdgeInsets.symmetric(horizontal: 10),
                                   child: Text(
                                     maxLines: 2,
                                     overflow: TextOverflow.ellipsis,
@@ -326,7 +326,7 @@ class AppointmentScreen extends StatelessWidget {
                 ),
                 child: const Center(
                   child: Text(
-                    "Book Appointment",
+                    "Schedule an Appointment",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 18,

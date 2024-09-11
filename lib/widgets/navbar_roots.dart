@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../screens/home_screen.dart';
 import '../screens/messages_screen.dart';
+import '../screens/schedule_screen.dart';
 import '../screens/settings_screen.dart';
 
 class NavbarRoots extends StatefulWidget {
@@ -17,7 +18,8 @@ class _NavbarRootsState extends State<NavbarRoots> {
   final _screens = [
     HomeScreen(),
     MessagesScreen(),
-    SettingScreen(),
+    const ScheduleScreen(),
+    const SettingScreen(),
   ];
 
   @override
@@ -50,6 +52,10 @@ class _NavbarRootsState extends State<NavbarRoots> {
             BottomNavigationBarItem(
               icon: Icon(CupertinoIcons.chat_bubble_text_fill),
               label: "Messages",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.calendar_badge_plus),
+              label: "Schedule",
             ),
             BottomNavigationBarItem(
               icon: Icon(CupertinoIcons.settings_solid),

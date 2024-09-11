@@ -19,7 +19,7 @@ class ChatSample extends StatelessWidget {
                 color: Color(0xFFE1E1E2),
               ),
               child: const Text(
-                "Hello, what i can do for you. you can book appointment directly.",
+                "Hello User! How may I help you?",
                 style: TextStyle(fontSize: 16),
               ),
             ),
@@ -32,13 +32,13 @@ class ChatSample extends StatelessWidget {
             child: ClipPath(
               clipper: LowerNipMessageClipper(MessageType.send),
               child: Container(
-                padding:
-                    const EdgeInsets.only(left: 20, top: 10, bottom: 25, right: 20),
+                padding: const EdgeInsets.only(
+                    left: 20, top: 10, bottom: 25, right: 20),
                 decoration: const BoxDecoration(
                   color: Color(0xFF7165D6),
                 ),
                 child: const Text(
-                  "Hello Doctor, Are you there?",
+                  "Hello Doctor! Can I schedule an appointment right now?",
                   style: TextStyle(fontSize: 16, color: Colors.white),
                 ),
               ),
